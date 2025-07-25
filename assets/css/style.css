@@ -1,0 +1,967 @@
+/* Default code Starts here */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: word-wrap;
+    /* border: 1px solid red; */
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    -webkit-font-smoothing: antialiased;
+    font-optical-sizing: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+
+    --primaryColor: #1478cc;
+    --secondaryColor: #0077b6;
+    --tertiaryColor: #1BBCF1;
+    --fourthColor: #90e0ef;
+    --darkColor: #151513;
+    --lightColor: #caf0fb;
+    --paraColor: #36454f;
+    --whiteColor: #ffffff;
+    /* --lightColor: #fafafa; */
+    --regularFont: 1.4rem;
+    --headingFont: 2rem;
+    --ffPrimary: "Sofia Sans", sans-serif;
+    --ffSecondary: "Content", system-ui;
+}
+
+section {
+    padding: 8rem 0rem;
+}
+
+.line {
+    background-color: var(--tertiaryColor);
+    width: 8rem;
+    height: 0.4rem;
+    margin-bottom: 5rem;
+}
+
+/* Heading */
+.heading h2 {
+    font-family: var(--ffPrimary);
+    font-size: 5.6rem;
+    color: var(--darkColor);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.heading p {
+    font-family: var(--ffPrimary);
+    font-size: 1.6rem;
+    font-weight: 350;
+}
+
+/* navBar and heroSectiono Buttons */
+.btn {
+    background-color: var(--tertiaryColor);
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    color: var(--whiteColor);
+    font-family: var(--ffSecondary);
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+
+.btn:hover {
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+}
+
+/* Animation */
+.fade-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.7s ease-out;
+    visibility: hidden;
+}
+
+.fade-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+
+/* Navbar Section */
+.nav-item a {
+    font-family: var(--ffPrimary);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.nav-item a:hover {
+    letter-spacing: 1px;
+    font-weight: 700;
+    border-bottom: 2.5px solid var(--primaryColor);
+    transition: transform 0.2s ease;
+}
+
+.navbar-toggler:hover {
+    background-color: var(--whiteColor);
+}
+
+/* Mobile Nav Styles */
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 75%;
+    height: 100vh;
+    background-color: var(--whiteColor);
+    z-index: 9999;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-nav-header h5 {
+    font-family: var(--ffSecondary);
+    font-size: 1.4rem;
+    color: var(--primaryColor);
+    padding-left: 2rem;
+}
+
+.mobile-nav.active {
+    left: 0;
+}
+
+.mobile-nav .nav-link {
+    padding: 1rem 3rem;
+    font-size: 18px;
+    border-radius: 2rem;
+    box-shadow: 2px 0 1.5px var(--primaryColor);
+    margin-bottom: 2rem;
+}
+
+.mobile-nav .nav-link:hover {
+    background-color: var(--tertiaryColor);
+}
+
+#mobileClose {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--primaryColor);
+}
+
+
+/* heroSection */
+.heroSection {
+    padding: 6rem 2rem;
+}
+
+.heroCard h1 {
+    font-family: var(--ffPrimary);
+    font-size: 6.4rem;
+    font-weight: 700;
+}
+
+.heroCard p {
+    font-family: var(--ffSecondary);
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.heroCard p span {
+    letter-spacing: 1px;
+    border-bottom: 2.5px solid var(--primaryColor);
+}
+
+.resume-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-modal-content {
+    background: white;
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.resume-modal-content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.resume-modal-content {
+    scroll-behavior: smooth;
+    padding-right: 8px;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    z-index: 10000;
+    background-color: transparent;
+    border: none;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+.heroMediaIcons .socialMedia i {
+    font-size: 1.4rem;
+    background-color: var(--primaryColor);
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+/* AboutMe Section */
+.text-container h2 {
+    font-family: var(--ffPrimary);
+    font-size: 3.2rem;
+    color: var(--primaryColor);
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+}
+
+.text-container p {
+    font-family: var(--ffSecondary);
+    font-size: 1.8rem;
+    color: var(--paraColor);
+    line-height: 2.6rem;
+}
+
+.time {
+    font-family: var(--ffSecondary);
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+    margin-bottom: 1.2rem;
+}
+
+.text-container h6 {
+    color: var(--darkColor);
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.first,
+.second,
+.third {
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    border-radius: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* Skills Section */
+.skills {
+    position: relative;
+    background-image: url(./assets/images/skillBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.skills::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #ffffff80;
+    z-index: 0;
+}
+
+.accordion-items {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    background-color: var(--fourthColor);
+    padding: 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-header h3 {
+    font-weight: 500;
+    font-size: 2.4rem;
+    color: var(--primaryColor);
+}
+
+.accordion-header span {
+    font-weight: 800;
+}
+
+.accordion-body {
+    display: none;
+    overflow: visible;
+    background-color: var(--lightColor);
+    transition: max-height 0.8s ease;
+    position: relative;
+    z-index: 2;
+    padding: 2rem 2rem;
+}
+
+.accordion-items.active .accordion-body {
+    display: block;
+}
+
+.accordion-body p {
+    color: var(--paraColor);
+    font-size: 1.8rem;
+    text-wrap: wrap;
+}
+
+.accordion-body span {
+    color: var(--darkColor);
+    font-weight: 800;
+}
+
+.accordion-icon i {
+    transition: transform 0.3s ease;
+    font-size: 1.4rem;
+    color: var(--primaryColor);
+}
+
+.accordion-items.active .accordion-icon i {
+    transform: rotate(180deg);
+}
+
+.heading_00 {
+    font-family: var(--ffPrimary);
+    font-size: 4.8rem;
+}
+
+.skillCards {
+    width: auto;
+    height: 38rem;
+}
+
+.cardHeading {
+    font-family: var(--ffPrimary);
+    font-size: 1.8rem;
+    color: var(--primaryColor);
+}
+
+.cardText {
+    font-family: var(--ffSecondary);
+    font-size: 1.8rem;
+    color: var(--secondaryColor);
+}
+
+.needicons {
+    width: 4rem;
+}
+
+/* project Section */
+.projects {
+    padding: 10rem 3rem;
+}
+
+.projectCards {
+    position: relative;
+    background-color: var(--whiteColor);
+    width: 100%;
+    height: fit-content;
+    border-radius: 1.6rem;
+    margin: 0rem 1rem;
+    margin-bottom: 8rem;
+}
+
+.projectCards .projectCardFooter {
+    overflow: hidden;
+    border-radius: 0.9rem;
+}
+
+.projectCardFooter {
+    padding: 2rem;
+}
+
+.projectCardFooter .projectImg {
+    /* width: 100%; */
+    /* height: 18rem; */
+    aspect-ratio: 12 / 9;
+    border-radius: 0.9rem;
+    margin-bottom: 0.4rem;
+    transition: transform 0.4s ease;
+}
+
+.projectCards .projectCardFooter:hover img {
+    transform: scale(1.1);
+}
+
+.projectCardHead {
+    position: absolute;
+    top: -3.3rem;
+    right: 18rem;
+    border: 2rem solid var(--whiteColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.projectCardHead img {
+    width: 6rem;
+}
+
+.projectCardBody {
+    padding: 0.8rem;
+    margin: 0.55rem;
+    padding-bottom: 2rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid var(--light2color);
+    text-wrap: wrap;
+    margin-top: 5rem;
+}
+
+.projectCardBody .cardHeading {
+    font-family: var(--ffSecondary);
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.card-text {
+    font-size: 1.3rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.card-text.expanded {
+    -webkit-line-clamp: unset;
+    overflow: visible;
+}
+
+.read-more-btn {
+    font-size: 1.2rem;
+    color: var(--secondaryColor);
+    border: none;
+    cursor: pointer;
+    margin: 0rem;
+}
+
+.tools p {
+    font-family: var(--ffPrimary);
+    font-size: 1.6rem;
+    padding: 2rem 0rem;
+}
+
+.line-divider {
+    width: 100%;
+    border-top: var(--primaryColor) 1px solid;
+    margin-bottom: 3rem;
+}
+
+.cardButton a {
+    background-color: var(--tertiaryColor);
+    cursor: pointer;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    color: var(--whiteColor);
+    font-family: var(--ffSecondary);
+    font-size: 1.6rem;
+}
+
+.cardButton a:hover {
+    background-color: var(--secondaryColor);
+    color: var(--whiteColor);
+}
+
+/* contact section */
+.contact {
+    padding: 5rem 0rem 3rem 0rem;
+}
+
+.location,
+.phoneNo,
+.mail {
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    border-radius: 3rem;
+    margin-bottom: 2rem;
+}
+
+.icon i {
+    font-size: 2.6rem;
+    color: var(--tertiaryColor);
+    margin-bottom: 2rem;
+    margin: 1rem;
+}
+
+.formHead h3 {
+    font-family: var(--ffSecondary);
+    font-size: 3.3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--tertiaryColor);
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    font-family: var(--ffSecondary);
+    font-size: 1.8rem;
+}
+
+.formBody button {
+    background-color: var(--tertiaryColor);
+    cursor: pointer;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    color: var(--whiteColor);
+    font-family: var(--ffSecondary);
+    font-size: 2.5rem;
+}
+
+button:hover {
+    background-color: var(--secondaryColor);
+    color: var(--whiteColor);
+}
+
+/* footer Section */
+.socialMedia i {
+    font-size: 1.8rem;
+    color: var(--whiteColor);
+    background-color: var(--tertiaryColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+.socialMedia a i:hover {
+    background-color: var(--darkColor);
+}
+
+/* scroll btn */
+#back-to-top {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    display: none;
+    font-size: 2rem;
+    background-color: var(--tertiaryColor);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    z-index: 999;
+    transition: opacity 0.3s ease;
+}
+
+#back-to-top:hover {
+    background-color: var(--primaryColor);
+}
+
+
+/* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
+
+/* for Responsive Target the ROW Code (display:grid) */
+
+/* Small devices (landscape phones, upto 576px and below) */
+/* @media (width <=576px) */
+@media (width >=320px) and (width <=576px) {
+
+    section {
+        padding: 6rem 0rem;
+    }
+
+    /* Heading */
+    .heroSection {
+        padding: 15rem 0rem;
+    }
+
+    .heading h2 {
+        font-size: 3.2rem;
+        font-weight: 700;
+    }
+
+    .heading p {
+        font-size: 1.4rem;
+    }
+
+    /* heroSection */
+    .heroCard h1 {
+        font-size: 4.4rem;
+    }
+
+    .heroCard p {
+        font-size: 1.8rem;
+    }
+
+    .heroMediaIcons .socialMedia i {
+        font-size: 1.4rem;
+        margin-right: 1rem;
+    }
+
+    .heroCardImg {
+        display: none;
+    }
+
+    /* AboutMe Section */
+    .text-container h2 {
+        font-size: 2.8rem;
+        font-weight: 600;
+        margin-bottom: 1.6rem;
+    }
+
+    .text-container p {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    .text-container {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .time {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1.2rem;
+    }
+
+    .text-container h6 {
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
+
+    /* Skills Section */
+    .accordion-header {
+        padding: 1rem;
+    }
+
+    .needicons {
+        width: 3rem;
+    }
+
+    .accordion-header h3 {
+        font-weight: 500;
+        font-size: 1.8rem;
+    }
+
+    /* project Section */
+    .projects {
+        padding: 4rem 0rem;
+    }
+
+    .projectCards {
+        margin: 0rem 0rem;
+        margin-bottom: 8rem;
+    }
+
+    .projectCardHead {
+        position: absolute;
+        top: -3.3rem;
+        right: 12.5rem;
+        height: 6.5rem;
+        width: 6.5rem;
+        border-radius: 50%;
+    }
+
+    .projectCardBody .cardHeading {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .cardButton a,
+    .formBody button {
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        font-size: 1.4rem;
+    }
+
+    .projectCardFooter {
+        padding: 1rem;
+    }
+
+    .projectCardFooter .projectImg {
+        aspect-ratio: 12 / 7;
+    }
+
+    .tools {
+        overflow: hidden;
+    }
+
+    .tools p {
+        font-size: 1.2rem;
+        padding: 1rem 0rem;
+    }
+
+    /* contact section */
+    .location,
+    .phoneNo,
+    .mail {
+        width: 100%;
+        padding: 1rem 0rem 1rem 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .bookingTable {
+        margin-top: 3rem;
+    }
+
+    .formHead h3 {
+        font-size: 2.4rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+    }
+
+    /* footer Section */
+    .socialMedia i {
+        font-size: 1.4rem;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        margin: 1rem;
+    }
+}
+
+/* Medium devices (tablets, upto 768px and above) */
+/* @media (min-width: 577px) and (max-width: 768px) */
+@media (width >=577px) and (width <=768px) {
+    section {
+        padding: 3rem 0rem;
+    }
+
+    /* Heading */
+    .heroSection {
+        padding: 15rem 0rem;
+    }
+
+    .heading h2 {
+        font-size: 3.2rem;
+        font-weight: 700;
+    }
+
+    .heading p {
+        font-size: 1.4rem;
+    }
+
+    /* heroSection */
+    .heroCard h1 {
+        font-size: 4.4rem;
+    }
+
+    .heroCard p {
+        font-size: 1.8rem;
+    }
+
+    .heroMediaIcons .socialMedia i {
+        font-size: 1.4rem;
+        margin-right: 1rem;
+    }
+
+    .heroCardImg {
+        display: none;
+    }
+
+    /* AboutMe Section */
+    .text-container h2 {
+        font-size: 2.8rem;
+        font-weight: 600;
+        margin-bottom: 1.6rem;
+    }
+
+    .text-container p {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    .text-container {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .time {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1.2rem;
+    }
+
+    .text-container h6 {
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
+
+    /* Skills Section */
+    .accordion-header {
+        padding: 1rem;
+    }
+
+    .needicons {
+        width: 3rem;
+    }
+
+    .accordion-header h3 {
+        font-weight: 500;
+        font-size: 1.8rem;
+    }
+
+    /* project Section */
+    .projects {
+        padding: 4rem 0rem;
+    }
+
+    .projectCards {
+        margin: 0rem 0rem;
+        margin-bottom: 8rem;
+    }
+
+    .projectCardHead {
+        position: absolute;
+        top: -3.3rem;
+        right: 14rem;
+        height: 6.5rem;
+        width: 6.5rem;
+        border-radius: 50%;
+    }
+
+    .projectCardBody .cardHeading {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .cardButton a,
+    .formBody button {
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        font-size: 1.4rem;
+    }
+
+    .projectCardFooter {
+        padding: 1rem;
+    }
+
+    .projectCardFooter .projectImg {
+        aspect-ratio: 12 / 7;
+    }
+
+    .tools {
+        overflow: hidden;
+    }
+
+    .tools p {
+        font-size: 1.2rem;
+        padding: 1rem 0rem;
+    }
+
+    /* contact section */
+    .location,
+    .phoneNo,
+    .mail {
+        width: 100%;
+        padding: 1rem 0rem 1rem 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .bookingTable {
+        margin-top: 3rem;
+    }
+
+    .formHead h3 {
+        font-size: 2.4rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+    }
+
+    /* footer Section */
+    .socialMedia i {
+        font-size: 1.4rem;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        margin: 1rem;
+    }
+}

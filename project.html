@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragavan's PortFolio | Project Section</title>
+    <link rel="shortcut icon" href="./assets/images/favIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="navBar py-3" id="homePage">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <nav
+                            class="navbar navbar-expand-lg navbar-light d-flex align-items-center justify-content-between">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="./assets/images/favIcon.png" alt="navBar_logo" width="50px" height="50px">
+                            </a>
+                            <div class="d-flex justify-content-around">
+                                <button class="navbar-toggler" type="button" id="mobileToggle">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <!-- desktop view navBar -->
+                                <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item px-3">
+                                            <a class="nav-link text-dark text-capitalize" href="./index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item px-3">
+                                            <a class="nav-link text-dark text-capitalize" href="#aboutSection">About</a>
+                                        </li>
+                                        <li class="nav-item px-3">
+                                            <a class="nav-link text-dark text-capitalize" href="./skill.html">Skill</a>
+                                        </li>
+                                        <li class="nav-item px-3">
+                                            <a class="nav-link text-dark text-capitalize"
+                                                href="./project.html">Projects</a>
+                                        </li>
+                                        <li class="nav-item px-3">
+                                            <a class="nav-link text-dark text-capitalize"
+                                                href="./contact.html">contact</a>
+                                        </li>
+                                    </ul>
+                                    <div class="d-flex align-items-center justify-content-center ml-5">
+                                        <a href="./assets/images/Ragavan_Resume.pdf" type="button" download
+                                            class="btn btn-primary">Download Resume</a>
+                                    </div>
+                                </div>
+
+                                <!-- mobile view navBar -->
+                                <div id="mobileNav" class="mobile-nav d-lg-none">
+                                    <div
+                                        class="mobile-nav-header d-flex justify-content-between align-items-center p-3">
+                                        <h5 class="m-0">Menu</h5>
+                                        <button id="mobileClose" class="btn btn-sm btn-outline-light">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </button>
+                                    </div>
+                                    <ul class="navbar-nav px-3">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#aboutSection">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./skill.html">Skill</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./project.html">Projects</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                    <div class="d-flex align-items-center justify-content-center ml-5">
+                                        <a href="./assets/Ragavan_Resume.pdf" type="button" download
+                                            class="btn btn-primary">Download Resume</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="projects py-0" id="projectSection">
+            <div class="container-fluid px-5">
+                <div class="row pb-5">
+                    <div class="col-md-12 d-flex flex-column align-items-center justify-content-center">
+                        <div class="heading text-center">
+                            <h2>projects</h2>
+                            <p>“Design can be art. Design can be aesthetics. Design is so simple, that’s why it is so
+                                complicated.” <span class="font-italic" style="font-size: 1.2rem;">- Paul Rand</span>
+                            </p>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div
+                        class="col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex align-items-start justify-content-center py-3">
+                        <div class="projectCards shadow-lg bg-white">
+                            <div class="projectCardHead shadow">
+                                <img src="./assets/images/coffee_logo.png" alt="CoffeeShop_logo">
+                            </div>
+                            <div class="projectCardBody text-center">
+                                <a href="https://ragavan728.github.io/multi_page_coffeeShop/">
+                                    <h3 class="cardHeading font-weight-bold">Coffee Shop</h3>
+                                </a>
+                                <p class="card-text" id="para">
+                                    Built a front-end design of CoffeeShop to mimic the layout and design.
+                                    Used HTML, CSS, and Bootstrap for structure and responsiveness.
+                                </p>
+                                <p class="read-more-btn d-flex justify-content-end">Read more</p>
+                                <div
+                                    class="tools font-weight-bold text-uppercase d-flex align-items-center justify-content-around">
+                                    <p>HTML5</p>
+                                    <p>CSS3</p>
+                                    <p>Bootstrap</p>
+                                </div>
+                                <div class="line-divider"></div>
+                                <div class="cardButton d-flex justify-content-center">
+                                    <a href="https://github.com/Ragavan728/multi_page_coffeeShop" type="button"
+                                        class="btn">view source code</a>
+                                </div>
+                            </div>
+                            <div class="projectCardFooter p-5">
+                                <a href="https://ragavan728.github.io/multi_page_coffeeShop/">
+                                    <img class="projectImg shadow" src="./assets/images/coffeeShop.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex align-items-start justify-content-center py-3">
+                        <div class="projectCards shadow-lg bg-white">
+                            <div class="projectCardHead shadow">
+                                <img src="./assets/images/lovik_logo.png" alt="lovik_logo">
+                            </div>
+                            <div class="projectCardBody text-center">
+                                <a href="https://ragavan728.github.io/lovik/">
+                                    <h3 class="cardHeading font-weight-bold">Lovik Digital Forum</h3>
+                                </a>
+                                <p class="card-text" id="para">
+                                    Recreated the Lovik Digital Forum using HTML, CSS, and Bootstrap to practice
+                                    front-end development. Focused on replicating the layout, styling, and responsive
+                                    behavior of the original design.
+                                </p>
+                                <p class="read-more-btn d-flex justify-content-end">Read more</p>
+                                <div
+                                    class="tools font-weight-bold text-uppercase d-flex align-items-center justify-content-around">
+                                    <p>HTML5</p>
+                                    <p>CSS3</p>
+                                    <p>Bootstrap</p>
+                                </div>
+                                <div class="line-divider"></div>
+                                <div class="cardButton d-flex justify-content-center">
+                                    <a href="https://github.com/Ragavan728/lovik" type="button" class="btn">view source
+                                        code</a>
+                                </div>
+                            </div>
+                            <div class="projectCardFooter p-5">
+                                <a href="https://ragavan728.github.io/lovik/">
+                                    <img class="projectImg" src="./assets/images/lovik.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex align-items-start justify-content-center py-3">
+                        <div class="projectCards shadow-lg bg-white">
+                            <div class="projectCardHead shadow">
+                                <img src="./assets/images/nice_logo.png" alt="nice_logo">
+                            </div>
+                            <div class="projectCardBody text-center">
+                                <a href="https://ragavan728.github.io/nicepages/">
+                                    <h3 class="cardHeading font-weight-bold">Nicepage free website builder</h3>
+                                </a>
+                                <p class="card-text" id="para">
+                                    Recreated the Nicepage free website builder Software using HTML, CSS, and Bootstrap
+                                    to practice
+                                    front-end development. Focused on replicating the layout, styling, and responsive
+                                    behavior of the original design.
+                                </p>
+                                <p class="read-more-btn d-flex justify-content-end">Read more</p>
+                                <div
+                                    class="tools font-weight-bold text-uppercase d-flex align-items-center justify-content-around">
+                                    <p>HTML5</p>
+                                    <p>CSS3</p>
+                                    <p>Bootstrap</p>
+                                </div>
+                                <div class="line-divider"></div>
+                                <div class="cardButton d-flex justify-content-center">
+                                    <a href="https://github.com/Ragavan728/nicepages" type="button" class="btn">view
+                                        source code</a>
+                                </div>
+                            </div>
+                            <div class="projectCardFooter p-5">
+                                <a href="https://ragavan728.github.io/nicepages/">
+                                    <img class="projectImg" src="./assets/images/nicepage.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex align-items-start justify-content-center py-3">
+                        <div class="projectCards shadow-lg bg-white">
+                            <div class="projectCardHead shadow">
+                                <img src="./assets/images/kings_logo.png" alt="kings_logo">
+                            </div>
+                            <div class="projectCardBody text-center">
+                                <a href="https://ragavan728.github.io/kings_digital/">
+                                    <h3 class="cardHeading font-weight-bold">Kingz Digital Solutions</h3>
+                                </a>
+                                <p class="card-text" id="para">
+                                    Recreated the Kingz Digital Solutions using HTML, CSS, and Bootstrap to practice
+                                    front-end development. Focused on replicating the layout, styling, and responsive
+                                    behavior of the original design.
+                                </p>
+                                <p class="read-more-btn d-flex justify-content-end">Read more</p>
+                                <div
+                                    class="tools font-weight-bold text-uppercase d-flex align-items-center justify-content-around">
+                                    <p>HTML5</p>
+                                    <p>CSS3</p>
+                                    <p>Bootstrap</p>
+                                </div>
+                                <div class="line-divider"></div>
+                                <div class="cardButton d-flex justify-content-center">
+                                    <a href="http://github.com/Ragavan728/kings_digital" type="button" class="btn">view
+                                        source code</a>
+                                </div>
+                            </div>
+                            <div class="projectCardFooter p-5">
+                                <a href="https://ragavan728.github.io/kings_digital/">
+                                    <img class="projectImg" src="./assets/images/kingzs.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex align-items-start justify-content-center py-3">
+                        <div class="projectCards shadow-lg bg-white">
+                            <div class="projectCardHead shadow">
+                                <img src="./assets/images/ctsv_logo.png" alt="ctsv_logo">
+                            </div>
+                            <div class="projectCardBody text-center">
+                                <a href="https://ragavan728.github.io/ctsv/">
+                                    <h3 class="cardHeading font-weight-bold">CTSV Solutions private Limited</h3>
+                                </a>
+                                <p class="card-text" id="para">
+                                    Recreated the CTSV Solutions using HTML, CSS, and Bootstrap to practice
+                                    front-end development. Focused on replicating the layout, styling, and responsive
+                                    behavior of the original design.
+                                </p>
+                                <p class="read-more-btn d-flex justify-content-end">Read more</p>
+                                <div
+                                    class="tools font-weight-bold text-uppercase d-flex align-items-center justify-content-around">
+                                    <p>HTML5</p>
+                                    <p>CSS3</p>
+                                    <p>Bootstrap</p>
+                                </div>
+                                <div class="line-divider"></div>
+                                <div class="cardButton d-flex justify-content-center">
+                                    <a href="https://github.com/Ragavan728/ctsv" type="button" class="btn">view source
+                                        code</a>
+                                </div>
+                            </div>
+                            <div class="projectCardFooter p-5">
+                                <a href="https://ragavan728.github.io/ctsv/">
+                                    <img class="projectImg" src="./assets/images/ctsv.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex align-items-start justify-content-center py-3">
+                        <div class="projectCards shadow-lg bg-white">
+                            <div class="projectCardHead shadow">
+                                <img src="./assets/images/tech_logo.png" alt="techSambar_logo">
+                            </div>
+                            <div class="projectCardBody text-center">
+                                <a href="https://ragavan728.github.io/techSambar/">
+                                    <h3 class="cardHeading font-weight-bold">Tech Sambar Technologies</h3>
+                                </a>
+                                <p class="card-text" id="para">
+                                    Recreated the Tech Sambar Technologies using HTML, CSS, and Bootstrap to practice
+                                    front-end development. Focused on replicating the layout, styling, and responsive
+                                    behavior of the original design.
+                                </p>
+                                <p class="read-more-btn d-flex justify-content-end">Read more</p>
+                                <div
+                                    class="tools font-weight-bold text-uppercase d-flex align-items-center justify-content-around">
+                                    <p>HTML5</p>
+                                    <p>CSS3</p>
+                                    <p>Bootstrap</p>
+                                </div>
+                                <div class="line-divider"></div>
+                                <div class="cardButton d-flex justify-content-center">
+                                    <a href="https://github.com/Ragavan728/techSambar" type="button" class="btn">view
+                                        source code</a>
+                                </div>
+                            </div>
+                            <div class="projectCardFooter p-5">
+                                <a href="https://ragavan728.github.io/techSambar/">
+                                    <img class="projectImg" src="./assets/images/techSambar.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex align-items-start justify-content-center py-3">
+                        <div class="projectCards shadow-lg bg-white">
+                            <div class="projectCardHead shadow">
+                                <img src="./assets/images/young_logo.png" alt="young_logo">
+                            </div>
+                            <div class="projectCardBody text-center">
+                                <a href="https://ragavan728.github.io/young-globes/">
+                                    <h3 class="cardHeading font-weight-bold">Young Globes Technologies</h3>
+                                </a>
+                                <p class="card-text" id="para">
+                                    Recreated the Young Globes Technologies using only HTML and CSS to practice
+                                    front-end development. Focused on replicating the layout, styling, and responsive
+                                    behavior of the original design.
+                                </p>
+                                <p class="read-more-btn d-flex justify-content-end">Read more</p>
+                                <div
+                                    class="tools font-weight-bold text-uppercase d-flex align-items-center justify-content-around">
+                                    <p>HTML5</p>
+                                    <p>CSS3</p>
+                                </div>
+                                <div class="line-divider"></div>
+                                <div class="cardButton d-flex justify-content-center">
+                                    <a href="https://github.com/Ragavan728/young-globes" type="button" class="btn">view
+                                        source code</a>
+                                </div>
+                            </div>
+                            <div class="projectCardFooter p-5">
+                                <a href="https://ragavan728.github.io/young-globes/">
+                                    <img class="projectImg" src="./assets/images/youngGlobes.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex align-items-start justify-content-center py-3">
+                        <div class="projectCards shadow-lg bg-white">
+                            <div class="projectCardHead shadow">
+                                <img src="./assets/images/resitration_logo.png" alt="registraion_form_logo">
+                            </div>
+                            <div class="projectCardBody text-center">
+                                <a href="https://ragavan728.github.io/registraion_form/">
+                                    <h3 class="cardHeading font-weight-bold">Simple Registration Form</h3>
+                                </a>
+                                <p class="card-text" id="para">
+                                    Designed a responsive registration form includes all essential input fields with
+                                    proper structure, layout, and modern styling. Focused on clean UI design, form
+                                    validation structure, and user-friendly responsiveness.
+                                </p>
+                                <p class="read-more-btn d-flex justify-content-end">Read more</p>
+                                <div
+                                    class="tools font-weight-bold text-uppercase d-flex align-items-center justify-content-around">
+                                    <p>HTML5</p>
+                                    <p>CSS3</p>
+                                    <p>Bootstrap</p>
+                                </div>
+                                <div class="line-divider"></div>
+                                <div class="cardButton d-flex justify-content-center">
+                                    <a href="https://github.com/Ragavan728/registraion_form" type="button"
+                                        class="btn">view source code</a>
+                                </div>
+                            </div>
+                            <div class="projectCardFooter p-5">
+                                <a href="https://ragavan728.github.io/registraion_form/">
+                                    <img class="projectImg" src="./assets/images/registrationForm.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex align-items-start justify-content-center py-3">
+                        <div class="projectCards shadow-lg bg-white">
+                            <div class="projectCardHead shadow">
+                                <img src="./assets/images/accordion_logo.png" alt="accordion_logo">
+                            </div>
+                            <div class="projectCardBody text-center">
+                                <a href="https://ragavan728.github.io/accordion/">
+                                    <h3 class="cardHeading font-weight-bold">Simple Accordion</h3>
+                                </a>
+                                <p class="card-text" id="para">
+                                    Built an interactive accordion using HTML, CSS, Bootstrap, and JavaScript with
+                                    smooth toggle functionality and responsive design.
+                                </p>
+                                <p class="read-more-btn d-flex justify-content-end">Read more</p>
+                                <div
+                                    class="tools font-weight-bold text-uppercase d-flex align-items-center justify-content-around">
+                                    <p>HTML5</p>
+                                    <p>CSS3</p>
+                                    <p>JavaScript</p>
+                                    <p>Bootstrap</p>
+                                </div>
+                                <div class="line-divider"></div>
+                                <div class="cardButton d-flex justify-content-center">
+                                    <a href="https://github.com/Ragavan728/accordion" type="button" class="btn">view
+                                        source code</a>
+                                </div>
+                            </div>
+                            <div class="projectCardFooter p-5">
+                                <a href="https://ragavan728.github.io/accordion/">
+                                    <img class="projectImg" src="./assets/images/accordion.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex align-items-start justify-content-center py-3">
+                        <div class="projectCards shadow-lg bg-white">
+                            <div class="projectCardHead shadow">
+                                <img src="./assets/images/allmedia_logo.png" alt="allmedia_logo">
+                            </div>
+                            <div class="projectCardBody text-center">
+                                <a href="https://allinmedia.42web.io/?i=1">
+                                    <h3 class="cardHeading font-weight-bold">All in media a creative Agency</h3>
+                                </a>
+                                <p class="card-text" id="para">
+                                    Recreated the original website using WordPress, focusing on layout structure, theme
+                                    customization, and responsive design. Utilized WordPress features to build a
+                                    functional and visually consistent site without coding.
+                                </p>
+                                <p class="read-more-btn d-flex justify-content-end">Read more</p>
+                                <div
+                                    class="tools font-weight-bold text-uppercase d-flex align-items-center justify-content-around">
+                                    <p>WordPress</p>
+                                </div>
+                                <div class="line-divider"></div>
+                                <div class="cardButton d-flex justify-content-center">
+                                    <a href="" type="button" class="btn">view source code</a>
+                                </div>
+                            </div>
+                            <div class="projectCardFooter p-5">
+                                <a href="https://allinmedia.42web.io/?i=1">
+                                    <img class="projectImg" src="./assets/images/wordPress.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex align-items-start justify-content-center py-3">
+                        <div class="projectCards shadow-lg bg-white">
+                            <div class="projectCardHead shadow">
+                                <img src="./assets/images/php.png" alt="phpForm_logo">
+                            </div>
+                            <div class="projectCardBody text-center">
+                                <a href="#">
+                                    <h3 class="cardHeading font-weight-bold">Simple login & signup form in PHP</h3>
+                                </a>
+                                <p class="card-text" id="para">
+                                    Developed a simple login and signup system using PHP and MySQL. The project handles
+                                    user registration, authentication, and secure data storage, providing a basic
+                                    foundation for user management.
+                                </p>
+                                <p class="read-more-btn d-flex justify-content-end">Read more</p>
+                                <div
+                                    class="tools font-weight-bold text-uppercase d-flex align-items-center justify-content-around">
+                                    <p>HTML</p>
+                                    <p>CSS</p>
+                                    <p>PHP</p>
+                                    <p>MySQL</p>
+                                </div>
+                                <div class="line-divider"></div>
+                            </div>
+                            <div class="projectCardFooter p-5">
+                                <a href="#">
+                                    <img class="projectImg" src="./assets/images/loginPHP.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex align-items-start justify-content-center py-3">
+                        <div class="projectCards shadow-lg bg-white">
+                            <div class="projectCardHead shadow">
+                                <img src="./assets/images/php.png" alt="phpcrud_logo">
+                            </div>
+                            <div class="projectCardBody text-center">
+                                <a href="#">
+                                    <h3 class="cardHeading font-weight-bold">Simple CRUD Method in PHP</h3>
+                                </a>
+                                <p class="card-text" id="para">
+                                    Built a simple CRUD (Create, Read, Update, Delete) application using PHP and MySQL.
+                                    The project allows users to manage data through a user-friendly interface with
+                                    database connectivity and basic form handling.
+                                </p>
+                                <p class="read-more-btn d-flex justify-content-end">Read more</p>
+                                <div
+                                    class="tools font-weight-bold text-uppercase d-flex align-items-center justify-content-around">
+                                    <p>HTML</p>
+                                    <p>CSS</p>
+                                    <p>PHP</p>
+                                    <p>MySQL</p>
+                                </div>
+                                <div class="line-divider"></div>
+                                <div class="cardButton d-flex justify-content-center">
+                                    <a href="https://github.com/Ragavan728/crudMethod" type="button" class="btn">view
+                                        source code</a>
+                                </div>
+                            </div>
+                            <div class="projectCardFooter p-5">
+                                <a href="#">
+                                    <img class="projectImg" src="./assets/images/crudMethodPHP.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer pt-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <div class="mediaIcons d-flex align-items-center justify-content-center">
+                            <div class="socialMedia">
+                                <a href="#" type="button" class="text-decoration-none">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </div>
+                            <div class="socialMedia">
+                                <a href="#" type="button" class="text-decoration-none">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <div class="socialMedia">
+                                <a href="#" type="button" class="text-decoration-none">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="socialMedia">
+                                <a href="#" type="button" class="text-decoration-none">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </div>
+                            <div class="socialMedia">
+                                <a href="#" type="button" class="text-decoration-none">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <div class="copyrights">
+                            <p class="p-small">Copyright © <a class="no-line" href="#">Ragavan</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="./assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+
+</html>
